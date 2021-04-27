@@ -26,6 +26,13 @@
       </div>
     </div>
     <script>
+      var latestVersionUrl = "https://km20511.github.io/ArchitectureClubExhibition/current";
+      window.onload = () => {
+        if(confirm("새 업데이트 버전이 존재합니다. 이동하시겠습니까?"))
+        {
+          open(latestVersionUrl);
+        }
+      };
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/ArchitectureClubExhibition0_4.loader.js";
       var config = {
