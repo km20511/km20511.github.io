@@ -30,7 +30,7 @@
       window.onload = () => {
         if(confirm("새 업데이트 버전이 존재합니다. 이동하시겠습니까?"))
         {
-          open(latestVersionUrl);
+          window.location.href = latestVersionUrl;
         }
       };
       var buildUrl = "Build";
